@@ -74,10 +74,10 @@ export interface sis_components {
 
 export interface sis_store_components {
     store : String,
-    components : [
-        {
-            componentId : String,
-            data : Object
-        }
-    ]
+    components : sis_store_components_component[]
+}
+
+export interface sis_store_components_component {
+    componentId : String,
+    data : Object
 }

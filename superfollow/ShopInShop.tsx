@@ -14,3 +14,12 @@ import * as INTERFACE from "./interfaces";
         data: INTERFACE.sis_store_components[]
     }
 }
+
+// [PUT] api/sis/components/{Store id}
+{
+    type request_body = INTERFACE.sis_store_components_component[]
+    
+    interface response_body extends INTERFACE.generic_response {
+        data: INTERFACE.sis_store_components
+    }
+}
