@@ -41,3 +41,43 @@ export interface timeslot_booking {
         endTime : String
     }
 }
+
+
+
+
+export interface user_details {
+    id : String
+    userName : String
+    userId : String
+    roles : String[]
+    type? : String;
+    providerType? : String
+    profilePicture  : String
+    banner : String
+    zh : user_details_content
+    en : user_details_content
+}
+
+interface user_details_content {
+    name : String
+    intro : String
+}
+
+
+export interface sis_components {
+    _id : String
+    type : String
+    enable : boolean
+}
+
+
+
+export interface sis_store_components {
+    store : String,
+    components : [
+        {
+            componentId : String,
+            data : Object
+        }
+    ]
+}
