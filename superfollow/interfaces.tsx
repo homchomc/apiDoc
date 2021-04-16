@@ -2,6 +2,7 @@ import * as ENUM from "./enums";
 
 export interface generic_response {
     status : ENUM.generic_response_status
+    success : boolean
     message? : String
     timestamp : number
     data? : Object
