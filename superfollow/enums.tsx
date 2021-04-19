@@ -20,3 +20,7 @@ export enum Timeslot_booking_cancel_codes {
     "OTHERS"
 }
 
+export enum Store_component_types {
+    
+}
+

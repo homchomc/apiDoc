@@ -81,19 +81,17 @@ export interface user_stores {
 
 export interface sis_components {
     _id : String
-    type : String
+    type : ENUM.Store_component_types
     enable : boolean
 }
 
-
-
 export interface sis_store_components {
-    store : String,
+    store : String
     components : sis_store_components_component[]
 }
 
 export interface sis_store_components_component {
-    componentId : String,
+    type : ENUM.Store_component_types
     data : Object
 }
 
