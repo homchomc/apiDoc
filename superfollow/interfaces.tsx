@@ -92,6 +92,7 @@ export interface sis_store_components {
 
 export interface sis_store_components_component {
     type : ENUM.Store_component_types
+    name : String
     data : Object
 }
 
