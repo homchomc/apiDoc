@@ -58,10 +58,18 @@ export interface user_details {
     zh : user_details_content
     en : user_details_content
 }
-
-interface user_details_content {
+export interface user_details_content {
     name : String
     intro : String
+}
+export interface user_details_stores {
+    code : String,
+    zh : {
+        name : String
+    },
+    en : {
+        name : String
+    }
 }
 
 
@@ -82,3 +90,6 @@ export interface sis_store_components_component {
     componentId : String,
     data : Object
 }
+
+
+
