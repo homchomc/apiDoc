@@ -11,6 +11,6 @@ import * as INTERFACE from "./interfaces";
 // [GET] api/userDetails/stores
 {
     interface response_body extends INTERFACE.generic_response {
-        data: INTERFACE.user_stores_response[],
+        data: INTERFACE.user_stores[],
     }
 }

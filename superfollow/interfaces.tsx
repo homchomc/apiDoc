@@ -71,10 +71,11 @@ export interface store_details {
         name : String
     }
 }
-export interface user_stores_response {
+export interface user_stores {
     userName: String
     email : String
-    stores : store_details[]
+    stores : String[]
+    storesDetails : store_details[]
 }
 
 
