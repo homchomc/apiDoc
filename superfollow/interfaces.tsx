@@ -62,7 +62,7 @@ export interface user_details_content {
     name : String
     intro : String
 }
-export interface user_details_stores {
+export interface store_details {
     code : String,
     zh : {
         name : String
@@ -70,6 +70,11 @@ export interface user_details_stores {
     en : {
         name : String
     }
+}
+export interface user_stores_response {
+    userName: String
+    email : String
+    stores : store_details[]
 }
 
 
