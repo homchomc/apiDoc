@@ -73,9 +73,9 @@ export interface store_details {
 }
 export interface user_stores {
     userName: String
-    email : String
-    stores : String[]
-    storesDetails : store_details[]
+    email? : String
+    stores? : String[]
+    storesDetails? : store_details[]
 }
 
 
@@ -93,7 +93,7 @@ export interface sis_store_components {
 export interface sis_store_components_component {
     type : ENUM.Store_component_types
     name : String
-    data : Object
+    data? : Object
 }
 
 
