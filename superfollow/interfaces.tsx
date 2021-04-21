@@ -80,9 +80,9 @@ export interface user_stores {
 
 
 export interface sis_components {
-    _id : String
     type : ENUM.Store_component_types
     enable : boolean
+    name? : String
 }
 
 export interface sis_store_components {
