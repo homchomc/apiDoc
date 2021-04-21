@@ -21,13 +21,15 @@ export enum Timeslot_booking_cancel_codes {
 }
 
 export enum Store_component_types {
+    "STORE_REMARKS",
+    "STORE_OPTIONAL_BANNER",
     "ROTATING_BANNER",
     "ADVANCED_PROMOTION_BOX",
-    "STORE_HEADER",
-    "PRECAUTIONS",
     "STORE_PICK_LISTS",
     "HOT_PICKS",
-    "PROMO_BANNERS",
+    "PRODUCT_OR_BRAND_LOGO",
+    "TERMS_AND_CONDITION",
+    "DELIVERY_INFO",
     "STORE_INFO",
     //BELOW NOT YET CONFIRMED, TEMPORARY NAMINGS
     "BANNER_1",
