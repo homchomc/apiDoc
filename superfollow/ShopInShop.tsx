@@ -24,7 +24,7 @@ import * as INTERFACE from "./interfaces";
     }
 }
 
-// [POST] api/sis/images
+// [GET] api/sis/images
 {
     interface request_parameters {
         component? : ENUM.Store_component_types
