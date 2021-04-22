@@ -23,3 +23,39 @@ import * as INTERFACE from "./interfaces";
         data: INTERFACE.sis_store_components
     }
 }
+
+// [POST] api/sis/images
+{
+    interface request_parameters {
+        component? : ENUM.Store_component_types
+        store : String
+    }
+    interface response_body extends INTERFACE.generic_response {
+        data : INTERFACE.sis_components_images
+    }
+}
+
+// [POST] api/sis/images
+{
+    interface request_formdata {
+        imageFiles : File
+        component : ENUM.Store_component_types
+        store : String
+        title : String
+    }
+    interface response_body extends INTERFACE.generic_response {
+        data : INTERFACE.sis_components_images
+    }
+}
+
+// [DELETE] api/sis/images
+{
+    interface request_parameters {
+        component : ENUM.Store_component_types
+        store : String
+        id : String
+    }
+    interface response_body extends INTERFACE.generic_response {
+        data : INTERFACE.sis_components_images
+    }
+}

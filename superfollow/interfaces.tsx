@@ -79,6 +79,9 @@ export interface user_stores {
 }
 
 
+
+//  -----------------------------------------    Shop In Shop    --------------------------------------------
+
 export interface sis_components {
     type : ENUM.Store_component_types
     enable : boolean
@@ -86,7 +89,7 @@ export interface sis_components {
 }
 
 export interface sis_store_components {
-    store : String
+    store : string
     components : sis_store_components_component[]
 }
 
@@ -96,5 +99,15 @@ export interface sis_store_components_component {
     data? : Object
 }
 
+export interface sis_components_images {
+    store : String
+    components : Map<ENUM.Store_component_types,sis_components_images_details>
+    
+}
+interface sis_components_images_details {
+    imageId : string
+    url : string
+    title : string
+}
 
 
