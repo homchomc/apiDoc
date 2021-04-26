@@ -41,7 +41,6 @@ import * as INTERFACE from "./interfaces";
         imageFiles : File
         component : ENUM.Store_component_types
         store : String
-        title : String
     }
     interface response_body extends INTERFACE.generic_response {
         data : INTERFACE.sis_components_images

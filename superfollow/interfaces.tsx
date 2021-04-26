@@ -107,7 +107,6 @@ export interface sis_components_images {
 interface sis_components_images_details {
     imageId : string
     url : string
-    title : string
 }
 
 
