@@ -96,7 +96,7 @@ export interface sis_store_components {
 export interface sis_store_components_component {
     type : ENUM.Store_component_types
     name : String
-    data? : Object
+    data? : sis_banner_data[]
 }
 
 export interface sis_components_images {
@@ -109,4 +109,9 @@ interface sis_components_images_details {
     url : string
 }
 
-
+interface sis_banner_data {
+    imageUrl : string
+    url : string
+    bannerNameZh : string
+    bannerNameEn : string
+}
