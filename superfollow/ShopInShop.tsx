@@ -15,6 +15,15 @@ import * as INTERFACE from "./interfaces";
     }
 }
 
+// [POST] api/sis/components/preview/{Store id}
+{
+    type request_body = INTERFACE.sis_store_components_component[]
+    
+    interface response_body extends INTERFACE.generic_response {
+        data: String
+    }
+}
+
 // [PUT] api/sis/components/{Store id}
 {
     type request_body = INTERFACE.sis_store_components_component[]
