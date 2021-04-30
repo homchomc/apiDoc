@@ -110,7 +110,7 @@ interface sis_components_images_details {
 }
 
 interface sis_banner_data {
-    imageUrl : string
+    image : string
     url : string
     bannerNameZh : string
     bannerNameEn : string
