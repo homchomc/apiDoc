@@ -109,3 +109,16 @@ import * as INTERFACE from "./interfaces";
         data : INTERFACE.timeslot_booking
     }
 }
+
+// ******************************
+{
+    interface request_body {
+        id : String,
+        skuid : [
+            String
+        ],
+        remarks : String
+    }
+    interface response_body extends INTERFACE.generic_response{
+    }
+}
