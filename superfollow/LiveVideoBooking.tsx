@@ -61,7 +61,7 @@ import * as INTERFACE from "./interfaces";
     }
 }
 
-// [POST] api/timeslot/booking
+// [GET] api/timeslot/booking
 {
     interface request_parameters {
         startLocalDate : String, //YYYY-MM-DD
@@ -72,7 +72,20 @@ import * as INTERFACE from "./interfaces";
     }
 }
 
-// [GET] api/timeslot/booking/{id}
+// [PUT] api/timeslot/booking/{id}
+{
+    interface request_body {
+        skuid : [
+            String
+        ],
+        remarks : String
+    }
+
+    interface response_body extends INTERFACE.generic_response{
+    }
+}
+
+// [PUT] api/timeslot/booking/{id}
 {
     interface response_body extends INTERFACE.generic_response{
         data : INTERFACE.timeslot_booking
