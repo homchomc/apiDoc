@@ -26,7 +26,7 @@ import * as INTERFACE from "./interfaces";
 
 // [DELETE] api/category
 {
-    interface request_body {
+    interface request_parameters {
         categoryId : string
     }
     interface response_body extends INTERFACE.generic_response {
