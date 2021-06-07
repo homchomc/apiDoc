@@ -38,3 +38,7 @@ export enum Store_component_types {
     "CUSTOM_HTML"
 }
 
+export enum category_status {
+    "ENABLED",
+    "DISABLED"
+}

@@ -6,6 +6,7 @@ export interface generic_response {
     message? : String
     timestamp : number
     data? : Object
+    code? : string
 }
 
 export interface timeslot {
@@ -114,4 +115,19 @@ interface sis_banner_data {
     url : string
     bannerNameZh : string
     bannerNameEn : string
+}
+
+
+
+
+
+//  -----------------------------------------    Category    --------------------------------------------
+export interface category {
+    _id : string
+    status : string
+    zh : categoryDetails
+    en : categoryDetails
+}
+export interface categoryDetails {
+    name : string
 }
