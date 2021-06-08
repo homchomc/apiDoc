@@ -5,7 +5,9 @@ import * as INTERFACE from "./interfaces";
 
 // [GET] api/category
 {
-    interface request {
+    interface request_parameters {
+        showEnabled? : boolean
+        showDisabled? : boolean
     }
     interface response_body extends INTERFACE.generic_response {
         data : INTERFACE.category[]
